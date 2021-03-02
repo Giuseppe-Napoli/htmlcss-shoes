@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Rubik Mono One', sans-serif;
+}
+ /* HEADER */
+.menu{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  text-align: right;
+  padding: 60px;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 22px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  text-align: center;
+}
+
+li a:hover{
+  box-shadow: 1px 4px 20px black;
+}
+ 
+/* MAIN */
+.box{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+ /* background sfondo */
+.red{
+  background-color: red;
+}
+
+.green{
+  background-color: green;
+}
+
+.yellow{
+  background-color: yellow;
+}
+ /* posizione img e text */
+.box .scarpa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.scarpa p{
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+}
+
+.yellow .scarpa p{
+  color: green;
+}
